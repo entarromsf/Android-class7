@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/main_layout">
+
+    <SurfaceView
+        android:layout_alignParentTop="true"
+        android:id="@+id/mediaplay_surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <SeekBar
+        android:layout_above="@id/mediaplay_linear"
+        android:id="@+id/mediaplay_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/mediaplay_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/mediaplay_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="启动" />
+
+        <Button
+            android:id="@+id/mediaplay_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停" />
+
+        <Button
+            android:id="@+id/mediaplay_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Load" />
+        <Button
+            android:id="@+id/mediaplay_playlocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play local" />
+
+    </LinearLayout>
+
+</RelativeLayout>
